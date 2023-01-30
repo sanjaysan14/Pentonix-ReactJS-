@@ -30,12 +30,10 @@ return await axios.get("http://ec2-3-20-29-91.us-east-2.compute.amazonaws.com:90
 .catch((err)=>console.log(err));
  };
 //console.log("data",data)
-//let obj=JSON.stringify(data)
+let obj=JSON.stringify(data)
 //let obj={...data}
-//console.log(obj);
-//json1 ={...data};
 //storing data as json abject
-let obj =Object.assign({},data);
+//let obj =Object.assign({},data);
 console.log(obj);
 
   return (
@@ -86,7 +84,7 @@ console.log(obj);
                   <td>{item.position}</td>
                   <td>{item.responsibilities}</td>
                   <td>{item.skills}</td>
-                  <td>{item.workstatus}</td>
+                  <td>{item.workStatus}</td>
                 </tr>
               </MDBTableBody>
             ))
